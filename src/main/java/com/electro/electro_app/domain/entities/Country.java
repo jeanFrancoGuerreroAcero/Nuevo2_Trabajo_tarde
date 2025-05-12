@@ -42,4 +42,6 @@ public class Country {
     @OneToMany(mappedBy = "country",fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JsonManagedReference("country-region")
     private Set<Region> regions = new HashSet<>();
+
+    //commen
 }
